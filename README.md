@@ -1,3 +1,7 @@
+# Taxfix Hotfix ⚡️️️️️️️️️
+
+Hotfix for https://github.com/segment-integrations/analytics-ios-integration-firebase/issues/33
+
 # Segment-Firebase
 
 [![CircleCI](https://circleci.com/gh/segment-integrations/analytics-ios-integration-firebase.svg?style=svg)](https://circleci.com/gh/segment-integrations/analytics-ios-integration-firebase)
@@ -19,9 +23,9 @@ Register your app in the [Firebase console](https://console.firebase.google.com/
 
 Add the following dependency to your Podfile:
 
- ```
- pod 'Segment-Firebase'
- ```
+```
+pod 'Segment-Firebase'
+```
 
 After adding the dependency and running `pod install`, import the integration:
 

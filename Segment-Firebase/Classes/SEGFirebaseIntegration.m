@@ -12,14 +12,27 @@
     if (self = [super init]) {
         self.settings = settings;
         self.firebaseClass = [FIRAnalytics class];
+        
+        // don't use Segment's fetched setting
+        /* BEFORE
         NSString *deepLinkURLScheme = [self.settings objectForKey:@"deepLinkURLScheme"];
         if (deepLinkURLScheme) {
             [FIROptions defaultOptions].deepLinkURLScheme = deepLinkURLScheme;
             SEGLog(@"[FIROptions defaultOptions].deepLinkURLScheme = %@;", deepLinkURLScheme);
         }
-
-        [FIRApp configure];
-        SEGLog(@"[FIRApp Configure]");
+        */
+        [FIROptions defaultOptions].deepLinkURLScheme = @"taxfix";
+        SEGLog(@"[FIROptions defaultOptions].deepLinkURLScheme = %@;", @"taxfix");
+        
+        // Firebase/DynamicLinks requires this to be initiated on main thread
+        /* BEFORE
+         [FIRApp configure];
+         SEGLog(@"[FIRApp Configure]");
+        */
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+            [FIRApp configure];
+            SEGLog(@"[FIRApp Configure]");
+        });
     }
     return self;
 }
