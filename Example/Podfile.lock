@@ -1,5 +1,5 @@
 PODS:
-  - Analytics (4.1.6)
+  - Analytics (4.1.8)
   - Expecta (1.0.6)
   - Firebase (10.20.0):
     - Firebase/Core (= 10.20.0)
@@ -126,7 +126,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Analytics: eefe524436f904b8bb3f8c8c3425280e43b34efc
+  Analytics: 9655e0e1c71ea98107cfcb2b14891168acc6c6c9
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Firebase: 10c8cb12fb7ad2ae0c09ffc86cd9c1ab392a0031
   FirebaseAnalytics: a2731bf3670747ce8f65368b118d18aa8e368246
