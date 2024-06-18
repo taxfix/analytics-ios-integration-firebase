@@ -8,4 +8,4 @@ spec:
   lifecycle: production
   domain: frontend-apps
   system: frontend-tracking
-  owner: frontend-platform
+  owner: developer-experience
