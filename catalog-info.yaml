@@ -6,6 +6,6 @@ metadata:
 spec:
   type: library
   lifecycle: production
-  domain: frontend-apps
-  system: frontend-tracking
+  domain: tech-foundation
+  system: tracking
   owner: developer-experience
